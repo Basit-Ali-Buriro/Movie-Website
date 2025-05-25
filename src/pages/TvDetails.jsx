@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { API_KEY } from '../data';
+import Navbar from '../components/Navbar';
 const IMG_URL = 'https://image.tmdb.org/t/p/original';
 
 function TVDetails() {
@@ -35,7 +36,10 @@ function TVDetails() {
   if (!tv) return null;
 
   return (
-    <div className="text-white px-4 py-8 max-w-6xl mx-auto">
+    <>
+    
+    <Navbar/>
+    <div className="text-white px-4 py-8 max-w-6xl mx-auto bg-black my-5 rounded-xl">
       <div className="flex flex-col md:flex-row gap-6">
         {/* Poster */}
         <img
@@ -83,6 +87,7 @@ function TVDetails() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
