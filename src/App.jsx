@@ -3,7 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import MovieDetails from './pages/MovieDetails'
 import Search from './pages/Search'
-import TVDetails from '../pages/TVDetails';
+import TVDetails from './pages/TvDetails'
+
 function App() {
   return (
     <div>
